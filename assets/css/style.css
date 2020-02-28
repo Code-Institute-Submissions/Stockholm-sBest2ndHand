@@ -35,7 +35,11 @@
   }
 }
 
-/* image with code from Rosie assignment & thesitewizard.com */
+.active {
+    
+}
+
+/* images with code from Rosie assignment & thesitewizard.com */
 
 .stockholm_img {
    background: url("../images/stockholm_img.jpg");
@@ -53,6 +57,72 @@
     border-top: 0px;
 }
 
+.kungsholmen_img {
+   background: url("../images/kungsholmen_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    width: 100%;
+    max-width: 100% ;
+    height: auto;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.ostermalm_img {
+   background: url("../images/ostermalm_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    width: 100%;
+    max-width: 100% ;
+    height: auto;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.sodermalm_img {
+   background: url("../images/sodermalm_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    width: 100%;
+    max-width: 100% ;
+    height: auto;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.vasastan_img {
+   background: url("../images/vasastan_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    width: 100%;
+    max-width: 100% ;
+    height: auto;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+/* text */
+
 .headline_div {
     background-color: #AFEEEE;
 }
@@ -65,56 +135,20 @@
     background-color: #AFEEEE;
 }
 
+.homepage_text {
+    font-family: "Roboto", serif;
+}
+
+/* maps */
+
+ div#map {
+    min-height: 360px;
+  }
+
 /* footer */
 
 footer {
       background-color: #AFEEEE;
       padding: 25px;
 }
-
-/* <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" 
-                href="#">Dropdown
-                <span class="caret"></span>
-                </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdown-target">
-                    <a class="dropdown-item">Södermalm</a>
-                    <a class="dropdown-item">Vasastan</a>
-                    <a class="dropdown-item">Kungsholmen</a>
-                    <a class="dropdown-item">Östermalm</a>
-                </div>
-            </li>
-
-            <nav class="navbar navbar-expand-md">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_target">
-        <span class="navbar-text">Neighborhoods</span>
-
-      <ul class="navbar-nav"></ul>
-           
-            
-             <li class="nav-item">
-                <a class="nav-link" href="#">Södermalm</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Vasastan</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Östermalm</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Kungsholmen</a>
-            </li>
-        </ul>
-
-        .navbar-collapse {
-    background-color: #AFEEEE;
-    width: 100%
-}
-
-*/
 

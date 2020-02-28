@@ -23,9 +23,9 @@
  <!-- navbar code from w3 schools-->
     
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
+  <a href="#home">Home</a>
   <a href="maps.html">Map</a>
-  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="active">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -33,30 +33,24 @@
     <div class="container-fluid headline_div">
         <h2 class=headline>Stockholm's Best Secondhand</h2>
         </div>
-   
-    <div class="container-fluid stockholm_img"> </div>
-    <div class="homepage_text">
-        <p>Whether you're looking to score something fabulous for a bargain price, 
-        contribute to a good cause, or reduce your carbon footprint, you'llj find some 
-        of the best thrift stores anywhere in Stockholm.
-        </p>
-</div>
-
-    <section class="container-fluid">
- <div class="row">
-        <div class="col-md-12">
-            <h4 class="section-heading uppercase">Emmaus</h4>
-                    </div>
-                    <p>aösldfkjaöldfjaölfjaöasdlfkjöalksjfd
-                    aösdlkfjaölkdfjöaldfjköalkfjölakdfölajsdölfkjald
-                    </p>
-                </div>
-                 <div class="row">
-        <div class="col-md-12">
-            <h4 class="section-heading uppercase">Emmaus</h4>
-                    </div>
-                </div>
-    </section>        
+<!-- code from Rosie resume project -->
+            <section class="container-fluid ">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">Comments/Suggestions</h3>
+                <h5 class="uppercase text-center">Please feel free to suggest other secondhand 
+                stores in Stockholm not included in this list.</h5>
+            </div>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 <footer>
 
@@ -65,6 +59,6 @@
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5o_rDG-IVzB18v-Sw8rF8cDNyCZaEtbQ&callback=initMap">
 </script>
-<script src="assets/js/maps.js"></script>
+<script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
