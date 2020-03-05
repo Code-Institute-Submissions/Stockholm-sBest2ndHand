@@ -11,11 +11,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <script type="text/javascript" src="assets/js/script.js"></script>
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+</script>
 <script type="text/javascript">
    (function(){
-      emailjs.init("user_xOteWp25hlPmSaUmCdHog");
-   })();
+     // emailjs.init("user_xOteWp25hlPmSaUmCdHog");
+      // emailjs.send("gmail", "rosie", {
+                name: "Aaron",
+                notes: "The project that I want is..."
+            })
+        })();
 </script>
 <title>Stockholm's Best Secondhand Stores</title>
 </head>
@@ -23,7 +29,7 @@
  <!-- navbar code from w3 schools-->
     
 <div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
+  <a href="index.html">Home</a>
   <a href="maps.html">Map</a>
   <a href="contact.html" class="active">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -45,8 +51,9 @@
                 <form onsubmit="return sendMail(this);">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Comments and suggestions" 
+                    required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send</button>
                 </form>
             </div>
         </div>
