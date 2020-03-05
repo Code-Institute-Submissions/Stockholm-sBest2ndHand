@@ -1,7 +1,7 @@
 /* code from Rosie resume project */
 function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 13,
+                zoom: 14,
                 center: {
                     lat: 59.334591,
                     lng: 18.063240
