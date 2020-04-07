@@ -15,7 +15,7 @@ function initMap() {
         { lat: 59.3193874, lng: 18.0700677 }, // emmaus
         { lat: 59.3188953, lng: 18.0615576 }, // stadsmissionen
         { lat: 59.3191879, lng: 18.0620237 }, // röda körset
-        { lat: 59.3174722, lng: 18.049938 }, // judit
+        { lat: 59.3174714, lng: 18.052199 }, // judit
         { lat: 59.3173322, lng: 18.0495676 }, // filippa k
         { lat: 59.3182002, lng: 18.0488125 }, // beyond retro zinken
         { lat: 59.3133187, lng: 18.0814983 }, // lisa larsson
