@@ -54,6 +54,7 @@
 .descriptions {
     padding-left: 20px;
     padding-right: 20px;
+    font-style: normal;
 }
 
 /* images with code from Rosie assignment & thesitewizard.com */
@@ -80,8 +81,9 @@
     background-color: #F7AEA0;
 }
 
-#map {
-    width: auto;
+div#map {
+    min-height: 360px;
+    min-width: 360pxM
 }
 
 
@@ -106,13 +108,21 @@
 
 /* maps */
 
- #map {
+ div#map {
     min-height: 360px;
+    min-width: 360px;
   }
 
 /* store descriptions */
 h4 {
     color: black;
+    font-family: Roboto;
+    font-style: normal;
+
+}
+
+.store_address {
+    font-style: normal;
 }
 
 /* comments section - send button with code from W3 schools*/
@@ -120,6 +130,15 @@ h4 {
 .comments {
       background-color: #F7AEA0;
       min-height: 35px;
+      font-style: normal;
+}
+
+.center-form {
+    font-style: normal;
+}
+
+.text-center {
+    font-style: normal;
 }
 
 .btn-send {
@@ -134,6 +153,7 @@ h4 {
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
+  font-style: normal;
 }
 
 
