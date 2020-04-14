@@ -13,14 +13,14 @@
                         }]
                     },
                     {
-                        placeName: "Emmaus Peter Myndes Backe 8, 118 46 Stockholm<",
+                        placeName: "Emmaus Peter Myndes Backe 8, 118 46 Stockholm",
                         LatLng: [{
                             lat: 59.3193874,
                             lng: 18.0700677 
                         }]
                     },
                     {
-                        placeName: "Stadsmissionen Hornsgatan 58, 118 21 Stockholm<",
+                        placeName: "Stadsmissionen Hornsgatan 58, 118 21 Stockholm",
                         LatLng: [{
                             lat: 59.3188953,
                             lng: 18.0615576 
@@ -62,7 +62,7 @@
                         }]
                     },
                       {
-                        placeName: "Myrorna (Vasastan) Adolf Fredriks Kyrkogatan 5, 111 37 Stockholm",
+                        placeName: "Myrorna (Norrmalm) Adolf Fredriks Kyrkogatan 5, 111 37 Stockholm",
                         LatLng: [{
                             lat: 59.3374381,
                             lng: 18.0588704 
@@ -92,7 +92,7 @@
         
                         const infowindow = new google.maps.InfoWindow({
                             content: contentString,
-                            maxWidth: 50
+                            maxWidth: 110
                         });
         
                         marker.addListener('click', function () {

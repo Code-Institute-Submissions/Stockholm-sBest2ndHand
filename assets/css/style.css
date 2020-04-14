@@ -51,12 +51,6 @@
     padding-right: 20px;
 }
 
-.descriptions {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-style: normal;
-}
-
 /* images with code from Rosie assignment & thesitewizard.com */
 
 .store5 {
@@ -103,26 +97,37 @@ div#map {
 }
 
 .homepage_text {
-    font-family: "Roboto", serif;
+    font-family: "Roboto";
 }
 
-/* maps */
 
- div#map {
-    min-height: 360px;
-    min-width: 360px;
-  }
 
 /* store descriptions */
 h4 {
     color: black;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: normal;
 
 }
 
+.store_name {
+    font-family: Roboto;
+}
+
+.fa_icon {
+    padding-left: 10px;
+}
+
+.descriptions {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: normal;
+    font-family: Roboto;
+}
+
 .store_address {
     font-style: normal;
+    font-family: "Roboto";
 }
 
 /* comments section - send button with code from W3 schools*/
@@ -131,14 +136,17 @@ h4 {
       background-color: #F7AEA0;
       min-height: 35px;
       font-style: normal;
+      font-family: "Roboto", serif;
 }
 
 .center-form {
     font-style: normal;
+    font-family: "Roboto", serif;
 }
 
 .text-center {
     font-style: normal;
+    font-family: "Roboto", serif;
 }
 
 .btn-send {
@@ -154,6 +162,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   font-style: normal;
+  font-family: "Roboto", serif;
 }
 
 
