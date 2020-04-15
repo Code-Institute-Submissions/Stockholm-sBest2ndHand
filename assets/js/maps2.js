@@ -1,7 +1,7 @@
        //code from freakyjolly.com
        var map;
                 var InforObj = [];
-                var centerCords = {
+                var centerStockholm = {
                     lat: 59.334591,
                     lng: 18.063240
                 };
@@ -115,7 +115,7 @@
         
                 function closeOtherInfo() {
                     if (InforObj.length > 0) {
-                        /* detach the info-window from the marker ... undocumented in the API docs */
+                        /* detach the info-window from the marker */
                         InforObj[0].set("marker", null);
                         /* and close it */
                         InforObj[0].close();
@@ -127,7 +127,9 @@
                 function initMap() {
                     map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 12,
-                        center: centerCords
+                        center: centerStockholm
                     });
                     addMarker();
                 }
+
+               
