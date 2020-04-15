@@ -80,14 +80,24 @@
                 window.onload = function () {
                     initMap();
                 };
+
+                var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         
                 function addMarker() {
                     for (var i = 0; i < markersOnMap.length; i++) {
                         var contentString = markersOnMap[i].placeName;
         
-                        const marker = new google.maps.Marker({
-                            position: markersOnMap[i].LatLng[0],
-                            map: map
+                        //const marker = new google.maps.Marker({
+                           // position: markersOnMap[i].LatLng[0],
+                           // map: map
+                        //});
+
+                        const marker = markersOnMap.map(function(LatLng,i) {
+                        return new google.maps.Marker({
+                        position: markersOnMap[i].LatLng[0],
+                        label: labels[i % labels.length],
+                        map: map
+                        });
                         });
         
                         const infowindow = new google.maps.InfoWindow({
@@ -122,5 +132,3 @@
                     });
                     addMarker();
                 }
-
-               

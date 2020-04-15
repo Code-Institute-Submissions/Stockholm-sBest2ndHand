@@ -1,4 +1,4 @@
-//code from freakyjolly.com
+       //code from freakyjolly.com
        var map;
                 var InforObj = [];
                 var centerStockholm = {
@@ -85,10 +85,32 @@
                     for (var i = 0; i < markersOnMap.length; i++) {
                         var contentString = markersOnMap[i].placeName;
         
-                        const marker = new google.maps.Marker({
-                            position: markersOnMap[i].LatLng[0],
-                            map: map
-                        });
+                         var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        var locations = [
+        { lat: 59.3538998, lng: 18.1055148 }, // myrorna kolargatan
+        { lat: 59.3193874, lng: 18.0700677 }, // emmaus
+        { lat: 59.3188953, lng: 18.0615576 }, // stadsmissionen
+        { lat: 59.3191879, lng: 18.0620237 }, // röda körset
+        { lat: 59.3174714, lng: 18.052199 }, // judit
+        { lat: 59.3173322, lng: 18.0495676 }, // filippa k
+        { lat: 59.3182002, lng: 18.0488125 }, // beyond retro zinken
+        { lat: 59.3133187, lng: 18.0814983 }, // lisa larsson
+        { lat: 59.3383229, lng: 18.0526542 }, // zak
+        { lat: 59.3374381, lng: 18.0588704 } // myrorna kyrkogatan
+    ];
+
+    var marker = locations.map(function(location,i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    })
+                        
+                        //const marker = new google.maps.Marker({
+                           // position: markersOnMap[i].LatLng[0],
+                            //map: map
+                        //});
         
                         const infowindow = new google.maps.InfoWindow({
                             content: contentString,
@@ -100,7 +122,16 @@
                             infowindow.open(marker.get('map'), marker);
                             InforObj[0] = infowindow;
                         });
-                      
+                        // marker.addListener('mouseover', function () {
+                        //     closeOtherInfo();
+                        //     infowindow.open(marker.get('map'), marker);
+                        //     InforObj[0] = infowindow;
+                        // });
+                        // marker.addListener('mouseout', function () {
+                        //     closeOtherInfo();
+                        //     infowindow.close();
+                        //     InforObj[0] = infowindow;
+                        // });
                     }
                 }
         
@@ -122,5 +153,3 @@
                     });
                     addMarker();
                 }
-
-               

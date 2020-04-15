@@ -5,6 +5,9 @@
                     lat: 59.334591,
                     lng: 18.063240
                 };
+
+                var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
                 var markersOnMap = [{
                         placeName: "Myrorna (Hjorthagen) Kolargatan 2, 115 42 Stockholm",
                         LatLng: [{
@@ -85,10 +88,22 @@
                     for (var i = 0; i < markersOnMap.length; i++) {
                         var contentString = markersOnMap[i].placeName;
         
-                        const marker = new google.maps.Marker({
-                            position: markersOnMap[i].LatLng[0],
-                            map: map
+                        //const marker = new google.maps.Marker({
+                           // position: markersOnMap[i].LatLng[0],
+                           // map: map
+                        //});
+
+                        var marker = markersOnMap.map(function(location,i) {
+                        return new google.maps.Marker({
+                        position: markersOnMap[i].LatLng[0],
+                        map: map,
+                        label: labels[i % labels.length]
                         });
+                    })
+
+                //var markerCluster = new MarkerClusterer(map, markers,
+                //{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+                //}
         
                         const infowindow = new google.maps.InfoWindow({
                             content: contentString,
@@ -100,7 +115,16 @@
                             infowindow.open(marker.get('map'), marker);
                             InforObj[0] = infowindow;
                         });
-                      
+                        // marker.addListener('mouseover', function () {
+                        //     closeOtherInfo();
+                        //     infowindow.open(marker.get('map'), marker);
+                        //     InforObj[0] = infowindow;
+                        // });
+                        // marker.addListener('mouseout', function () {
+                        //     closeOtherInfo();
+                        //     infowindow.close();
+                        //     InforObj[0] = infowindow;
+                        // });
                     }
                 }
         
@@ -122,5 +146,3 @@
                     });
                     addMarker();
                 }
-
-               

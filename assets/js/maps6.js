@@ -80,6 +80,8 @@
                 window.onload = function () {
                     initMap();
                 };
+
+                var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         
                 function addMarker() {
                     for (var i = 0; i < markersOnMap.length; i++) {
@@ -87,8 +89,16 @@
         
                         const marker = new google.maps.Marker({
                             position: markersOnMap[i].LatLng[0],
+                            label: labels[i % labels.length],
                             map: map
                         });
+
+                        //var markers = locations.map(function(location,i) {
+                        //return new google.maps.Marker({
+                        //position: location,
+                        //label: labels[i % labels.length]
+                        //});
+                        //})
         
                         const infowindow = new google.maps.InfoWindow({
                             content: contentString,
@@ -122,5 +132,3 @@
                     });
                     addMarker();
                 }
-
-               
