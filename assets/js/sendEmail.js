@@ -1,5 +1,5 @@
 /*code from Rosie resume project */
-/*function sendMail(contactForm) {
+function sendMail(contactForm) {
     email.js.send("gmail", "rosie", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
@@ -13,4 +13,4 @@
             console.log("Failed", error);
         });
         return false;  // To block from loading a new page
-}*/
+}
