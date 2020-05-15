@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Philosopher:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Abril Fatface:100,200,300,400,500,600,700');
 /* navbar with code fro w3 schools */
  .topnav {
      background-color: #F7AEA0 ;
@@ -75,7 +75,7 @@
      background-color: #F7AEA0 ;
 }
  .headline {
-     font-family: 'Philosopher', serif;
+     font-family: 'Abril Fatface', cursive;
      text-align: center;
      color: black;
      vertical-align: bottom: background-color: #AFEEEE;

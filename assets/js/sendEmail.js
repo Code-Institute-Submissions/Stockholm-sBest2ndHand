@@ -1,6 +1,6 @@
 /*code from Rosie resume project */
 function sendMail(contactForm) {
-    email.js.send("gmail", "rosie", {
+    emailjs.send("gmail", "rosie", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "comments": contactForm.comments.value
