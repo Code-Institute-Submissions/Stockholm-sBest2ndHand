@@ -2,8 +2,8 @@ Stockholm's Best Secondhand
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/PWashburn55/Milestone2) 
 
-This webpage lists some good secondhand stores in Stockholm and features a map with lettered markers. The 
-site is designed to make it easy for people who would like to find thrift stores and who would like to see where 
+This webpage lists some popular secondhand stores in Stockholm and features a map with lettered markers and an email form.
+The site is designed to make it easy for people who would like to find thrift stores and who would like to see where 
 they are located in relationship to one another, to make it easier to plan a shopping trip. The stores listed 
 below the map each have a letter next to the address corresponding to the letter on the marker on the map.
 
@@ -18,14 +18,14 @@ image that adjusts in size, a menu bar that collapses, and a list of stores that
 depending on the size of the screen.
 
 The color scheme was selected based on UX design principles of having contrasting colors and a 60-30-10 balance of a neutral
-color (white) with an accent color (peachy coral) and a third color (black). The layout was meant to be clean with plenty of negative space. It is on a single page because there was
- not a lot of information.
+color (white) with an accent color (peachy coral) and a third color (black). The layout was meant to be clean with plenty of negative 
+space on a single web page because there is not a lot of text. 
 
 Features
 
-The page has a navigation bar, an embedded Google map with lettered markers, store descriptions with links to the 
-store web sites, and a contact form at the bottom. The image is from Pixabay and I wrote the descriptions. Future 
-improvements to the webpage could include adding a functionality for users to add comments and/or ratings for the 
+The page has a navigation bar, an embedded Google map with lettered markers and info windows, store descriptions with links to the 
+store web sites, a button to scroll to the top, and a contact form at the bottom. The image is from Pixabay and I wrote the descriptions. 
+Future improvements to the webpage could include adding a functionality for users to add comments and/or ratings for the 
 various stores. 
 
 
@@ -33,7 +33,7 @@ Technologies Used
 
 The page was designed with HTML, CSS, and Bootstrap. EmailJS was used for the email functionality and the Google Maps 
 API was used for the map with Info Windows. JavaScript was used for the email functionality, the map, and the navigation 
-bar and menu. Code from other sources is noted in the HTML, CSS, and JavaScript files.
+bar, the scrolling button, and the menu. Code from other sources is noted in the HTML, CSS, and JavaScript files.
 
 
 Testing
